@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sukoon privacy policy</title>
+<meta name="description" content="How the Sukoon app handles your family's health information.">
+<style>
+  :root { --bg: #ffffff; --text: #1d2a25; --muted: #4c5c55; --accent: #0f6e56; --line: #d9e3de; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1a16; --text: #e8f0ec; --muted: #a9bab2; --accent: #6fd3b4; --line: #2a3a33; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Sukoon privacy policy</h1>
+<p class="muted">Effective 6 November 2026</p>
+
+<p>Sukoon is an Android app that helps families in India decide how worried to be when someone feels unwell, and keep their health story in one place. This policy explains what information Sukoon handles, where it goes, and the choices you have. Sukoon is not a doctor and does not diagnose or treat anyone.</p>
+
+<p>Questions, complaints or requests: <a href="mailto:lifesigns.comms@gmail.com">lifesigns.comms@gmail.com</a>. This address is also the contact for grievances under India's Digital Personal Data Protection Act, 2023.</p>
+
+<h2>1. What stays on your phone</h2>
+<p>The family members you add (name, age, gender, relation, health conditions, allergies, medicines, family history), your check-ins and their results, prescriptions and their photos, and your settings are stored only on your phone, in a database encrypted with a key kept in Android's secure storage. Sukoon's server never receives this database.</p>
+
+<h2>2. Your account</h2>
+<p>You sign in with your email address and a one-time code. Our backend provider, Supabase, keeps your email address and an account id so you can sign in. Our server also keeps, for each day, how many smart-chat replies and prescription readings your account used, so the daily limit can work. It never keeps what was said.</p>
+
+<h2>3. The smart chat (AI), only if you allow it</h2>
+<p>If you turn on the smart chat, each time it replies Sukoon sends the conversation and that family member's health details (age, gender, relation, conditions, allergies, medicines, family history, the latest prescription's date, doctor and medicine names, and the last check-in's result) to an AI service. The member's name is removed on your phone before anything is sent. If local weather is on, today's temperature and humidity are sent too.</p>
+<p>The request passes through Sukoon's server, which does not store it, to <strong>Groq</strong>. If Groq cannot answer, it goes to <strong>Google's Gemini</strong> instead. Each service handles it under its own terms: <a href="https://groq.com/privacy-policy/">Groq privacy policy</a>, <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and <a href="https://policies.google.com/privacy">Google privacy policy</a>. Groq says it does not train its models on what is sent to it. Under the Gemini API's free terms, Google may use what is sent to improve its products, and people at Google may read it.</p>
+<p>You can turn the smart chat off at any time in Settings. The practice chat works entirely on your phone and sends nothing.</p>
+
+<h2>4. Reading a prescription, only if you allow it</h2>
+<p>If you ask Sukoon to read a prescription photo, the photo is sent through Sukoon's server, which does not store it, to Groq, or to Google's Gemini if Groq cannot read it, under the terms above. Prescriptions often show the patient's and the doctor's names. Only the doctor's name, the date and the medicine names come back, and you check them before anything is saved.</p>
+
+<h2>5. Weather, only if you turn it on</h2>
+<p>If local weather is on, Sukoon asks Android for your approximate location (about 1 km) when a chat starts, and sends it to <a href="https://open-meteo.com/en/terms">Open-Meteo</a> to get the temperature and humidity. Your location is not sent to Sukoon's server and is not saved.</p>
+
+<h2>6. Voice typing and reading aloud</h2>
+<p>Voice typing uses your phone's own speech service (on most Android phones, Google's), so what you say is handled by that service to turn it into text. Reading messages aloud uses your phone's text-to-speech and sends nothing.</p>
+
+<h2>7. Backups and doctor reports</h2>
+<p>A backup is locked on your phone with a password you choose, then saved or shared wherever you pick. Doctor reports are PDF files made on your phone and shared only where you send them. Sukoon cannot open your backups without your password and does not keep a copy.</p>
+
+<h2>8. Reporting a reply</h2>
+<p>If you report an AI reply, your email app opens with that reply filled in, addressed to us. Nothing is sent unless you send that email yourself.</p>
+
+<h2>9. What Sukoon does not do</h2>
+<ul>
+  <li>No ads, no tracking, no analytics, and no selling or sharing of your information for marketing.</li>
+  <li>No use of your information to train AI models by Sukoon.</li>
+  <li>No payments: every feature is free.</li>
+</ul>
+
+<h2>10. Security</h2>
+<p>Information on your phone is encrypted. Everything Sukoon sends travels over encrypted connections (HTTPS). The keys for the AI services are kept on Sukoon's server, never in the app.</p>
+
+<h2>11. Keeping and deleting your information</h2>
+<p>Your email address, account id and daily usage counts are kept until you delete your account. To delete it, open Sukoon and go to <strong>Settings → Your account → Delete my account</strong>. That deletes your account on the server and everything Sukoon keeps on that phone. If you cannot use the app, see <a href="delete-account.html">how to ask for your account to be deleted</a>. Uninstalling the app removes everything on the phone, but not your account; to remove the account too, delete it first or ask us.</p>
+
+<h2>12. Your rights</h2>
+<p>You can ask to see, correct or delete the information we hold about you, withdraw your consent (for the smart chat, prescription reading or weather, by turning them off in Settings), or raise a grievance, by writing to <a href="mailto:lifesigns.comms@gmail.com">lifesigns.comms@gmail.com</a>. We reply within 30 days.</p>
+
+<h2>13. Children</h2>
+<p>Sukoon is meant for adults looking after their families. A parent or guardian may add a child as a family member; the child's details stay on the parent's phone as described above. Children should not create their own accounts.</p>
+
+<h2>14. Changes</h2>
+<p>If this policy changes, we will update the date above and, for important changes, tell you in the app.</p>
+</main>
+</body>
+</html>
